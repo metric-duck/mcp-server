@@ -1,0 +1,22 @@
+# Code owners for metric-duck/mcp-server
+# These owners will be automatically requested for review when PRs modify these files
+
+# Default owners for everything in the repo
+* @metric-duck/mcp-maintainers
+
+# Core server logic
+/src/metricduck_mcp/server.py @metric-duck/mcp-maintainers
+/src/metricduck_mcp/config.py @metric-duck/mcp-maintainers
+
+# Security-sensitive files
+/src/metricduck_mcp/handlers/base.py @metric-duck/mcp-maintainers
+/.github/workflows/ @metric-duck/mcp-maintainers
+/.pre-commit-config.yaml @metric-duck/mcp-maintainers
+
+# Documentation
+/README.md @metric-duck/mcp-maintainers
+/MIGRATION_GUIDE.md @metric-duck/mcp-maintainers
+
+# Package configuration
+/pyproject.toml @metric-duck/mcp-maintainers
+/requirements.txt @metric-duck/mcp-maintainers
