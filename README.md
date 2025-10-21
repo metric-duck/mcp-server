@@ -6,7 +6,7 @@ Model Context Protocol (MCP) server providing AI-native access to MetricDuck's f
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
 
-**Status:** 🚧 Pre-Beta (v0.0.1) - 5 tools working (2 company + 3 financial statements)
+**Status:** 🚧 Pre-Beta (v0.0.2) - 8 tools active (2 company + 3 statements + 3 DCF + 1 screener)
 
 ---
 
@@ -28,6 +28,34 @@ This MCP server enables AI assistants like Claude Code, Cursor, and Windsurf to 
 - **Temporary Model Duplication**: Pydantic models copied from API for rapid development (migration path documented)
 - **Scalable**: Pattern-based structure for adding new tools
 - **Production-Ready**: Logging, error handling, configuration management
+
+---
+
+## 📚 Documentation
+
+**Complete documentation is now centralized in the `docs/` folder.**
+
+### For Users
+- **[User Documentation](./docs/user/README.md)** - Installation, configuration, tools reference
+- **[Analytical Workflows](./ANALYTICAL_WORKFLOWS.md)** - 20+ workflow examples
+- **[Quick Start](#installation)** - Get started in 5 minutes (below)
+
+### For Developers
+- **[Internal Documentation](./docs/internal/README.md)** - Architecture, development, features
+- **[Sprint Documentation](./docs/internal/sprints/)** - Sprint plans & retrospectives
+- **[API Specification](./docs/openapi/metricduck-api.json)** - OpenAPI spec
+
+### Latest Updates
+- ✅ **v0.0.2 Released**: Simplified DCF Methodology
+  - Updated to industry-average beta/tax rates (11-sector classification)
+  - FRED API integration for risk-free rate (updated weekly)
+  - Simplified margin of safety (removed trading advice language)
+  - Updated tool descriptions for transparency
+- ✅ **Sprint 1 Complete**: DCF Trust Features ([docs](./docs/internal/sprints/sprint1-complete.md))
+  - Reverse DCF (market-implied growth)
+  - Margin of Safety analysis
+  - Data Freshness assessment
+- 📖 **Documentation Consolidation**: All docs now in MCP-compliant structure ([summary](./DOCUMENTATION_COMPLETE.md))
 
 ---
 
@@ -538,3 +566,30 @@ MIT License - see [LICENSE](LICENSE) file for details
 ---
 
 **Built with ❤️ for AI-native financial data access**
+
+---
+
+## 📖 Analytical Capabilities
+
+MetricDuck MCP enables **20+ high-value financial analytical workflows**. 
+
+**Currently Supported (7 workflows):**
+- ✅ Company search & discovery
+- ✅ Financial health assessment
+- ✅ Revenue & profitability analysis  
+- ✅ Cash generation quality evaluation
+- ✅ Financial position & liquidity check
+- ✅ DCF intrinsic value calculation
+- ✅ Margin trend analysis
+
+**Coming Soon (13 workflows):**
+- 🔄 Value stock screening (131+ metrics)
+- 🔄 Quality company identification
+- 🔄 Industry peer comparison
+- 🔄 Growth stock screening
+- 🔄 AI-powered earnings insights
+- 🔄 Sector performance analysis
+- 🔄 And more...
+
+> **See [ANALYTICAL_WORKFLOWS.md](ANALYTICAL_WORKFLOWS.md) for complete workflow guide with examples**
+
