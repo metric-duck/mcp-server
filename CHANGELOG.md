@@ -5,6 +5,12 @@ All notable changes to the MetricDuck MCP Server will be documented in this file
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Hosted] - 2026-10-03
+
+### Changed
+- MetricDuck now runs as a hosted remote MCP server at `https://mcp.metricduck.com/mcp` (OAuth sign-in, nothing to install). This repository is its public home: setup, coverage and links.
+- The local Python package (0.0.2) is no longer on `main`; its code is preserved at tag `v0.0.2`.
+
 ## [0.0.2] - 2025-01-21
 
 ### Changed

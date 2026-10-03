@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.metricduck/financial-analysis",
+  "title": "MetricDuck — Financial Analysis",
+  "description": "SEC data layer for AI agents — financials, screening, every figure traceable to its filing.",
+  "version": "0.9.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.metricduck.com/mcp"
+    }
+  ]
+}
